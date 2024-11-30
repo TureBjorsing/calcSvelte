@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import Calc from '$lib/components/Calc.svelte';
+</script>
+
+<svelte:head>
+    <title>Miniräknare</title>
+</svelte:head>
+
+<main>
+    <Calc />
+</main>
