@@ -48,31 +48,28 @@
     }
 </script>
 
-<main>
-    <input type="text" value={display} disabled>
-    <Keyboard on:click = {updateDisplay}/>
-</main>
+<input type="text" value={display} disabled>
+<Keyboard on:click = {updateDisplay}/>
 
 <style lang="scss">
-    main {
-        input {
-            width: 100%;
-            font-size: 5rem;
-            margin-bottom:10px;
-            background-color: black;
-            color: rgba(0, 255, 0, 1);
-            text-align: right;
-            padding: 10px 4px 10px 4px;
-            font-family: lcd;
-            border: 1px solid yellow;
-            border-radius:4px;
-        }
-
-        input[disabled] {
-        -webkit-text-fill-color: rgba(0, 255, 0, 1);
-        opacity: 1;
-        -webkit-opacity: 1;
-        color: rgba(0, 255, 0, 1)
-        }
+    
+    input {
+        width: 100%;
+        font-size: 5rem;
+        margin-bottom:10px;
+        background-color: black;
+        color: rgba(0, 255, 0, 1);
+        text-align: right;
+        padding: 10px 4px 10px 4px;
+        font-family: lcd;
+        border: 1px solid yellow;
+        border-radius:4px;
+    }
+    
+    input[disabled] {
+    -webkit-text-fill-color: rgba(0, 255, 0, 1);
+    opacity: 1;
+    -webkit-opacity: 1;
+    color: rgba(0, 255, 0, 1)
     }
 </style>
